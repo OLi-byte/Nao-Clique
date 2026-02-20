@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e6e6e6;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+}
+
+.animatedFadeOut {
+  animation: fadeOut 2s ease forwards;
+}
+
+.animatedFadeIn {
+  animation: fadeIn 4s ease forwards;
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
+h2 {
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 3rem;
+  font-size: 32px;
+  letter-spacing: 0.6rem;
+}
+
+button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background: #e1e6e1;
+  background: radial-gradient(
+    circle,
+    rgba(225, 230, 225, 0.92) 0%,
+    rgba(230, 59, 46, 0.92) 0%,
+    rgba(173, 49, 40, 0.95) 100%
+  );
+  color: #d6d4d4;
+  font-size: 18px;
+  font-weight: 400;
+
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  transform: translateY(10px);
+  font-size: 18px;
+  box-shadow: none;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+  }
+}
