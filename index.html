@@ -7,7 +7,14 @@
     <title>botao</title>
   </head>
   <body>
-    <img class="background" src="./images/lobos.jpg" alt="Imagens de 2 lobos" />
+    <picture class="background">
+      <source
+        media="(max-width: 600px)"
+        srcset="./images/lobisomem.webp"
+        type="image/webp"
+      />
+      <img src="./images/lobos.webp" alt="Imagens de 2 lobos" />
+    </picture>
     <div class="buttonContainer">
       <h2>NÃO CLIQUE AQUI</h2>
       <button class="botao"></button>
