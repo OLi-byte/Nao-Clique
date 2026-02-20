@@ -70,9 +70,6 @@ button {
     rgba(230, 59, 46, 0.92) 0%,
     rgba(173, 49, 40, 0.95) 100%
   );
-  color: #d6d4d4;
-  font-size: 18px;
-  font-weight: 400;
 
   transition: all 0.5s ease;
 }
